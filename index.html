@@ -5,29 +5,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>**DECODIFICADOR**</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <title>***ENCRIPTADOR***</title>
 </head>
 
 <body>
     <header>
         <h1><img src="./assets/logo-alura.svg" alt="Logo Alura"></h1>
     </header>
+
     <main class="container">
-        <input placeholder="digite seu texto" />
-        <p>Apenas letras minúsculas e sem acento.</p>
-        <div class="btn-container">
-            <button>Criptografar</button>
-            <button>Descriptografar</button>
-        </div>
-        <section>
-            <img src="./assets/people.svg" alt="Imagem de pessoa segurando uma lupa.">
-            <p>Nenhuma mensagem encontrada</p>
-            <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+        <section class="section-ask">
+            <input id="input-container" placeholder="digite seu texto" />
+            
+            <div>
+                <p> <img src="./assets/exclamation.svg">Apenas letras minúsculas e sem acento.</p>
+                <button class="btn-container" id="btn-crip" type="button">Criptografar</button>
+                <button class="btn-container" id="btn-descrip" type="button">Descriptografar</button>
+            </div>
+        </section>
+        <section class="section-response">
+            <img src="./assets/people.svg" alt="Imagem de pessoa segurando uma lupa." width="300px">
+            <p class="first-paragraph">Nenhuma mensagem encontrada</p>
+            <p class="second-paragraph"><i>Digite um texto que você deseja criptografar ou descriptografar.</i></p>
 
         </section>
     </main>
+
     <footer>
-        <p>Copyrigth Mariana Moioli Capelari - 2022</p>
+        <p class="footer" >Copyrigth &copy Mariana Moioli Capelari - 2022</p>
     </footer>
 </body>
 
