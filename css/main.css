@@ -9,12 +9,13 @@
     display: flex;
     justify-content: center;
     width: 50%;
-    height: 50px;
+    height: 60px;
     border: none;
     border-radius: 20px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 150%;
     margin-top: 5rem;
+    padding-left: 1.5rem;
 }
 
 .container input::placeholder {
@@ -33,13 +34,14 @@
 .container .section-ask p {
    color: #828487;
    margin: 0 0 1rem 1rem; 
+   font-size: 0.8rem;
 }
 
 .container .section-ask .btn-container {
-    padding: 24px;
+    padding: 1rem;
     margin-bottom: 2rem;
-    width: 328px;
-    height: 67px;
+    width: 250px;
+    height: 60px;
     background: #0A3871;
     border-radius: 24px;
     font-size: 1rem;
@@ -67,18 +69,33 @@
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08)
 }
 
-.section-response .first-paragraph {
+.container .section-response .first-paragraph {
     font-weight: 600;
     font-size: 1.4rem;
     text-align: center;
     color: #343A40;
 }
 
-.section-response .second-paragraph {
+.container .section-response .second-paragraph {
     font-size: 1rem;
     text-align: center;
     color: #343A40;
     margin-top: 0.5rem;
+}
+
+#btn-section-response, #btn-section-response-refresh {
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 40px;
+    background: #0A3871;
+    border-radius: 16px;
+    font-size: 1rem;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    display: none;
 }
 
 

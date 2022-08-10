@@ -20,25 +20,27 @@
 
     <main class="container">
         <section class="section-ask">
-            <input id="input-container" placeholder="digite seu texto" />
+            <input id="input-container" placeholder="digite seu texto"/>
             
             <div>
-                <p> <img src="./assets/exclamation.svg">Apenas letras minúsculas e sem acento.</p>
-                <button class="btn-container" id="btn-crip" type="button">Criptografar</button>
-                <button class="btn-container" id="btn-descrip" type="button">Descriptografar</button>
+                <p> <img id="img-section-ask" src="./assets/exclamation.svg" width="10px">Apenas letras minúsculas e sem acento.</p>
+                <button class="btn-container" id="btn-crip" type="button" onclick="encriptar()" >Encriptar</button>
+                <button class="btn-container" id="btn-descrip" type="button" onclick="desencriptar()" >Desencriptar</button>
             </div>
         </section>
         <section class="section-response">
-            <img src="./assets/people.svg" alt="Imagem de pessoa segurando uma lupa." width="300px">
+            <img id="img-section-response" src="./assets/people.svg" alt="Imagem de pessoa segurando uma lupa." width="300px">
             <p class="first-paragraph">Nenhuma mensagem encontrada</p>
             <p class="second-paragraph"><i>Digite um texto que você deseja criptografar ou descriptografar.</i></p>
-
+            <button id="btn-section-response" type="button" onclick="copyToClickBoard()" >Copiar</button>
+            <button id="btn-section-response-refresh" type="button">Reiniciar</button>
         </section>
     </main>
 
     <footer>
         <p class="footer" >Copyrigth &copy Mariana Moioli Capelari - 2022</p>
     </footer>
+    <script src="./js/scripts.js"></script>
 </body>
 
 </html>
