@@ -1,16 +1,16 @@
 
-function encriptar() {
-    let texto = document.getElementById('input-container').value.toLowerCase()
+function encrypt() {
+    var text = document.getElementById('input-container').value.toLowerCase()
 
-    var textCifrado = texto.replace(/e/igm, "enter")
-    var textCifrado = textCifrado.replace(/o/igm, "ober")
-    var textCifrado = textCifrado.replace(/i/igm, "imes")
-    var textCifrado = textCifrado.replace(/u/igm, "ufat")
+    var encryptedText = text.replace(/e/igm, "enter")
+    var encryptedText = encryptedText.replace(/o/igm, "ober")
+    var encryptedText = encryptedText.replace(/i/igm, "imes")
+    var encryptedText = encryptedText.replace(/u/igm, "ufat")
 
 
     document.getElementById("img-section-response").style.display = "none"
     document.querySelector(".second-paragraph").style.display = "none"
-    document.querySelector(".first-paragraph").innerHTML = textCifrado
+    document.querySelector(".first-paragraph").innerHTML = encryptedText
     document.getElementById("btn-section-response").style.display = "show"
     document.getElementById("btn-section-response").style.display = "inherit"
     document.getElementById("btn-section-response-refresh").style.display = "show"
@@ -18,32 +18,32 @@ function encriptar() {
 }
 
 
-function desencriptar() {
-    let texto = document.getElementById('input-container').value.toLowerCase()
+function decrypt() {
+    var text = document.getElementById('input-container').value.toLowerCase()
 
-    var textCifrado = texto.replace(/enter/igm, "e")
-    var textCifrado = textCifrado.replace(/ober/igm, "o")
-    var textCifrado = textCifrado.replace(/imes/igm, "i")
-    var textCifrado = textCifrado.replace(/ai/igm, "a")
-    var textCifrado = textCifrado.replace(/ufat/igm, "u")
+    var encryptedText = text.replace(/enter/igm, "e")
+    var encryptedText = encryptedText.replace(/ober/igm, "o")
+    var encryptedText = encryptedText.replace(/imes/igm, "i")
+    var encryptedText = encryptedText.replace(/ai/igm, "a")
+    var encryptedText = encryptedText.replace(/ufat/igm, "u")
 
 
     document.getElementById("img-section-response").style.display = "none"
     document.querySelector(".second-paragraph").style.display = "none"
-    document.querySelector(".first-paragraph").innerHTML = textCifrado
+    document.querySelector(".first-paragraph").innerHTML = encryptedText
 }
 
 function copyToClickBoard() {
-    let texto = document.getElementById('input-container')
-    let content = document.querySelector('.first-paragraph').innerHTML;
+    var text = document.getElementById('input-container')
+    var content = document.querySelector('.first-paragraph').innerHTML;
 
     navigator.clipboard.writeText(content)
     alert("Copiado!")
 
-    texto.value = ""
+    text.value = ""
 }
 
-let buttonRefresh = document.querySelector("#btn-section-response-refresh");
+var buttonRefresh = document.querySelector("#btn-section-response-refresh");
 buttonRefresh.addEventListener("click", function () {
 
     location.reload();

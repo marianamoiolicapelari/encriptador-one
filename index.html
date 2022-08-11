@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/media-queries.css">
     <title>***ENCRIPTADOR***</title>
 </head>
 
@@ -20,12 +21,12 @@
 
     <main class="container">
         <section class="section-ask">
-            <input id="input-container" placeholder="digite seu texto"/>
+            <input id="input-container" placeholder="Digite seu texto"/>
             
-            <div>
+            <div class="div-btn-container">
                 <p> <img id="img-section-ask" src="./assets/exclamation.svg" width="10px">Apenas letras minúsculas e sem acento.</p>
-                <button class="btn-container" id="btn-crip" type="button" onclick="encriptar()" >Encriptar</button>
-                <button class="btn-container" id="btn-descrip" type="button" onclick="desencriptar()" >Desencriptar</button>
+                <button class="btn-container" type="button" onclick="encrypt()" >Encriptar</button>
+                <button class="btn-container" type="button" onclick="decrypt()" >Desencriptar</button>
             </div>
         </section>
         <section class="section-response">
