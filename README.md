@@ -3,7 +3,7 @@
 ## 💻 Sobre o Projeto
 Encriptador desenvolvido em Vanilla JS, utilizando o método replace() para substituir um trecho de uma string por outro e retornar a operação em uma nova string, 
 misturando as letras e retornando o texto "encriptado". Também foi utilizado a função nativa window.navigator.clipboard.writeText para copiar o texto criptografado 
-atrelado ao botão "Copy". Por último usamos o método location.reload() atrelado ao botão "Reiniciar" através de um evento de click. Proposto para ser bem visualizado 
+atrelado ao botão "Copy". Por último apliquei o método location.reload() atrelado ao botão "Reiniciar" através de um evento de click. Proposto para ser bem visualizado 
 em desktop e mobile utilizando midia queries para trabalhar a responsividade.
 
 ## 🎨 Layout
