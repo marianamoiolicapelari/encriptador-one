@@ -1,4 +1,4 @@
-# ENCRIPTADOR DE PALAVRAS.
+# Encriptador de texto
 
 ## 💻 Sobre o Projeto
 Encriptador desenvolvido em Vanilla JS, utilizando o método replace() para substituir um trecho de uma string por outro e retornar a operação em uma nova string, 
